@@ -97,6 +97,18 @@
       } else {
         alert("You don't speak Portuguese");
       }
+
+      function canSpeakPortuguese() {
+        let country = prompt("What country are you from?");
+        if (
+          country.toLowerCase() === "brazil" ||
+          country.toLowerCase() === "portugal"
+        ) {
+          alert("You speak Portuguese!");
+        } else {
+          alert("Go Learn Portuguese");
+        }
+      }
     </script>
   </body>
 </html>
