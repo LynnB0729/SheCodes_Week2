@@ -66,6 +66,22 @@
       <br />
       <button>Apply Now</button>
     </section>
-    <script></script>
+    <script>
+      function applyNow() {
+        let name = prompt("What is your first name?");
+        let age = prompt("What is your age?");
+
+        if (age >= 18) {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML = "Hi," + " " + name + " " + "Welcome to She Codes!";
+        } else {
+          let h1 = document.querySelector("h1");
+          h1.innerHTML =
+            "Sorry," + " " + name + " " + "You cannot join SheCodes";
+        }
+      }
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", applyNow);
+    </script>
   </body>
 </html>
